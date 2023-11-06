@@ -7,13 +7,17 @@
   </head>
   <body>
     <main>
-      <button id="googleButton">Open Google</button>
-      <button id="w3schoolsButton">Open W3Schools JavaScript</button>
-      <button id="imagesButton">Images</button>
+      <button class="google-button" id="googleButton">Open Google</button>
     </main>
     <script>
       "use strict";
-      
+      //get html elements into variables
+      const googleButton = document.getElementById("googleButton");
+      const googleButton1 = document.querySelector("#googleButton");
+      const googleButton2 = document.querySelector(".google-button");
+      const googleButton3 = document.querySelector("button");
+
+      console.log(googleButton, googleButton1, googleButton2, googleButton3);
     </script>
   </body>
 </html>
