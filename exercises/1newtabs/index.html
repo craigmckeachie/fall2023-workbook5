@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Tabs</title>
+  </head>
+  <body>
+    <main>
+      <button id="googleButton">Open Google</button>
+      <button id="w3schoolsButton">Open W3Schools</button>
+      <button id="imagesButton">Open Images</button>
+    </main>
+    <script>
+      const googleButton = document.getElementById("googleButton");
+      const w3schoolsButton = document.getElementById("w3schoolsButton");
+      const imagesButton = document.getElementById("imagesButton");
+
+      function openGoogle() {
+        window.open("https://www.google.com/")
+      }
+
+      googleButton.onclick = openGoogle;
+    </script>
+  </body>
+</html>
