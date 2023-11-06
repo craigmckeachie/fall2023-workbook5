@@ -23,9 +23,11 @@
     </main>
     <script>
       const openButton = document.getElementById("openButton");
+      const paragraphs = document.getElementsByTagName("p");
 
       function changeBackground(params) {
         document.body.style.backgroundColor = "yellow";
+        paragraphs[0].style.backgroundColor = "purple";
       }
 
       setTimeout(changeBackground, 3000);
