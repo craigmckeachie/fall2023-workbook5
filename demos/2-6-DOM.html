@@ -32,8 +32,11 @@
 
       function changeBackground(params) {
         document.body.style.backgroundColor = "yellow";
-        paragraphs[0].style.backgroundColor = "purple";
-        paragraphs[0].style.border = "2px dashed red";
+
+        for (const paragraph of paragraphs) {
+          paragraph.style.backgroundColor = "purple";
+          paragraph.style.border = "2px dashed red";
+        }
       }
 
       setTimeout(changeBackground, 3000);
