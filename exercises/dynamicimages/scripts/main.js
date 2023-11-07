@@ -33,8 +33,8 @@ function loadImageList() {
 }
 
 function addImage() {
-  const imageFileId = imageList.value;
-  console.log(imageFileId);
+  const id = imageList.value;
+  console.log(id);
 }
 
 //wire-up function
