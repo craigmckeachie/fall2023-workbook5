@@ -8,7 +8,8 @@ const decorateButton = document.querySelector("#decorateButton");
 function decorate() {
   const paragraphs = document.querySelectorAll("p");
   for (const p of paragraphs) {
-    p.style.backgroundColor = "aqua";
+    p.style.border = "3px dashed red";
+    p.style.backgroundColor = "green";
   }
 }
 
