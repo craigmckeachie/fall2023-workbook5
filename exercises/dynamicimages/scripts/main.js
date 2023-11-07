@@ -34,7 +34,12 @@ function loadImageList() {
 
 function addImage() {
   const id = imageList.value;
-  console.log(id);
+  for (const imageFile of imageFiles) {
+    if (imageFile.id == id) {
+        //add image to div
+        console.log(imageFile);
+    }
+  }
 }
 
 //wire-up function
