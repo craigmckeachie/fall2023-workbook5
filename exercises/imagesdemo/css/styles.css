@@ -1,5 +1,7 @@
 body {
   background-color: goldenrod;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* font-size: 1rem; */
 }
 
 p {
@@ -7,6 +9,6 @@ p {
   color: white;
 }
 
-.imgRounded{
-    border-radius: 50%;
+.imgRounded {
+  border-radius: 50%;
 }
