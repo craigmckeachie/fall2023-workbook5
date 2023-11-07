@@ -36,8 +36,14 @@ function addImage() {
   const id = imageList.value;
   for (const imageFile of imageFiles) {
     if (imageFile.id == id) {
-        //add image to div
-        console.log(imageFile);
+      //create an image element
+      let image = document.createElement("img");
+      //set a src attribute on the image to the imageFile's path
+      image.src = imageFile.path;
+      //set the alt attribute on the image to the imageFile's description
+      image.alt = imageFile.description
+      //add image to div
+      imagesDiv.appendChild(image)
     }
   }
 }
