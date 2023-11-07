@@ -5,7 +5,6 @@ let imageFiles = [
   { id: "1", path: "https://placehold.co/300x300", description: "placeholder 1" },
   { id: "2", path: "https://placehold.co/300x300", description: "placeholder 2" },
   { id: "3", path: "https://placehold.co/300x300", description: "placeholder 3" },
-  { id: "3", path: "https://placehold.co/300x300", description: "placeholder 4" },
   { id: "4", path: "https://placehold.co/300x300", description: "placeholder 5" },
   { id: "5", path: "https://placehold.co/300x300", description: "placeholder 6" },
   { id: "6", path: "https://placehold.co/300x300", description: "placeholder 7" },
@@ -28,7 +27,7 @@ console.log(imageList, addImageButton, clearImagesButton, imagesDiv);
 function loadImageList() {
   for (const imageFile of imageFiles) {
     let option = document.createElement("option");
-    option.value = imageFile.path;
+    option.value = imageFile.id;
     option.innerText = imageFile.description;
     imageList.appendChild(option);
   }
