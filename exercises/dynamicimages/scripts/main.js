@@ -18,7 +18,11 @@ let imageFiles = [
 
 //get elements
 const imageList = document.querySelector("#imageList");
-console.log(imageList);
+const addImageButton = document.querySelector("#addImageButton");
+const clearImagesButton = document.querySelector("#clearImagesButton");
+const imagesDiv = document.querySelector("#imagesDiv");
+
+console.log(imageList, addImageButton, clearImagesButton, imagesDiv);
 
 //functions
 
