@@ -7,8 +7,9 @@ const decorateButton = document.querySelector("#decorateButton");
 //functions
 function decorate() {
   const paragraphs = document.querySelectorAll("p");
-  const p = paragraphs[0];
-  p.style.backgroundColor = "aqua";
+  for (const p of paragraphs) {
+    p.style.backgroundColor = "aqua";
+  }
 }
 
 //wire-up connect functions to events
