@@ -25,5 +25,13 @@ const imagesDiv = document.querySelector("#imagesDiv");
 console.log(imageList, addImageButton, clearImagesButton, imagesDiv);
 
 //functions
+function loadImageList() {
+    for (const imageFile of imageFiles) {
+        console.log(imageFile);
+    }
+}
+
+loadImageList();
+
 
 //wire-up function
