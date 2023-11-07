@@ -1,0 +1,12 @@
+body {
+  background-color: goldenrod;
+}
+
+p {
+  padding: 2rem;
+  color: white;
+}
+
+.imgRounded{
+    border-radius: 50%;
+}

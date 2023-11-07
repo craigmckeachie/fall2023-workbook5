@@ -11,6 +11,12 @@ function decorate() {
     p.style.border = "3px dashed red";
     p.style.backgroundColor = "green";
   }
+
+  const images = document.querySelectorAll("img");
+  for (const image of images) {
+    image.className = "imgRounded"
+  }
+
 }
 
 //wire-up connect functions to events
