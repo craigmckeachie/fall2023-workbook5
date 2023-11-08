@@ -4,22 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lottery Tickets</title>
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid black;
+        padding: 0.5rem;
+        margin: 0.5rem;
+      }
+    </style>
   </head>
   <body>
     <main>
-        <h3>Outstanding Winning Lottery Tickets</h3>
-        <table id="winningTicketsTable">
-            <thead>
-                <tr>
-                    <th>Ticket Number</th>
-                    <th>Prize Amount</th>
-                    <th>Expires</th>
-                </tr>
-            </thead>
-            <tbody id="winningTicketsTableBody">
-
-            </tbody>
-        </table>
+      <h3>Outstanding Winning Lottery Tickets</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Ticket Number</th>
+            <th>Prize Amount</th>
+            <th>Expires</th>
+          </tr>
+        </thead>
+        <tbody id="winningTicketsTableBody"></tbody>
+      </table>
     </main>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
