@@ -6,7 +6,7 @@ function isOver60(arrayValue) {
   }
 }
 
-let numbers = [7, 9, 11, 60, 12, 13, 65, 62];
+let numbers = [7, 9, 64, 60, 12, 13, 65, 62];
 
 let firstValOver60 = numbers.find(isOver60); // returns 64
 if (firstValOver60) {
