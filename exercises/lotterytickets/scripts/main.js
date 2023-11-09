@@ -33,6 +33,8 @@ function loadTicketsTable() {
   }
 }
 
+
+
 //wire-up function to events
 window.onload = function () {
   loadTicketsTable();
