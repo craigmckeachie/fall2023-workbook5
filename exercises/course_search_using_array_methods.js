@@ -96,10 +96,19 @@ console.log(inexpensiveCourses);
 console.log();
 
 console.log('What classes meet in "Classroom 1"?');
-for (const course of courses) {
-  if (course.Location == "Classroom 1") {
-    console.log(course.Title);
-  }
+// for (const course of courses) {
+//   if (course.Location == "Classroom 1") {
+//     console.log(course.Title);
+//   }
+// }
+
+function meetInClassroom1(course) {
+  return course.Location == "Classroom 1";
+}
+
+let classroom1Courses = courses.filter(meetInClassroom1);
+for (const class1Course of classroom1Courses) {
+    console.log(class1Course.Title);
 }
 
 //
