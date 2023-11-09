@@ -20,20 +20,22 @@ const winningTicketsTableBody = document.querySelector("#winningTicketsTableBody
 //functions
 function loadTicketsTable() {
   for (const ticket of winningTickets) {
-    let tr = winningTicketsTableBody.insertRow();
-
-    let td1 = tr.insertCell();
-    td1.innerText = ticket.tixNum;
-
-    let td2 = tr.insertCell();
-    td2.innerText = ticket.prize.toLocaleString();
-
-    let td3 = tr.insertCell();
-    td3.innerText = ticket.expires;
+    buildTicketRow(ticket);
   }
 }
 
+function buildTicketRow(ticket) {
+  let tr = winningTicketsTableBody.insertRow();
 
+  let td1 = tr.insertCell();
+  td1.innerText = ticket.tixNum;
+
+  let td2 = tr.insertCell();
+  td2.innerText = ticket.prize.toLocaleString();
+
+  let td3 = tr.insertCell();
+  td3.innerText = ticket.expires;
+}
 
 //wire-up function to events
 window.onload = function () {
