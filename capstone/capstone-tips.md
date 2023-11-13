@@ -9,8 +9,6 @@
 ![Parks Table](image.png)
 
 
-https://github.com/craigmckeachie/fall2023-workbook4
-
 2. Load locationsArray into a select list (dropdown) with Label of State/Territory.
 
 - Use [select list from array](https://github.com/craigmckeachie/fall2023-workbook4/blob/main/demos/3-4-select-list-from-array.html) as example
