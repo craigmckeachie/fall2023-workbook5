@@ -36,4 +36,9 @@
 
 - Use your code from step 3 above but change your if statement to filter by Park Type instead of location/state.
 
+## Other
+
 7. Be sure you have consistent navigation between all your pages
+8. Add a classless library style sheet of your choice.
+
+- Use [this article](https://blog.logrocket.com/comparing-classless-css-frameworks/) to understand how to try out different ones.
