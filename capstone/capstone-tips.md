@@ -36,6 +36,9 @@
 
 - Use your code from step 3 above but change your if statement to filter by Park Type instead of location/state.
 
+7. Add radio buttons in a group for the search type (By Location or By Type). Hide and show the appropriate `select list\dropdown` when the page loads and when the search type selected changes.
+- Use the [Hide/Show Radio Demo](../demos/hide-show-radio.html) as an example.
+
 ## Other
 
 7. Be sure you have consistent navigation between all your pages
