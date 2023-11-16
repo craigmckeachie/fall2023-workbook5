@@ -2,6 +2,8 @@
 
 ## Parks Page
 
+![Parks Page](image-3.png)
+
 1. Load parksArray into parks table.
 
 - Use [lotterytickets](../exercises/lotterytickets/) as an example.
