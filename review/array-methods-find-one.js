@@ -35,3 +35,10 @@ let courses = [
     Fee: "50.00",
   },
 ];
+
+//find one
+for (const course of courses) {
+  if (course.CourseId == "PROG400") {
+    console.log(course);
+  }
+}
