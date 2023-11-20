@@ -62,7 +62,9 @@ function isPROG400(course) {
 () => {};
 () => {};
 
-let foundCourse = courses.find((course) => {
-  return course.CourseId == "PROG400";
-});
+// let foundCourse = courses.find((course) => {
+//   return course.CourseId == "PROG400";
+// });
+
+let foundCourse = courses.find((course) => course.CourseId == "PROG400");
 console.log(foundCourse);
