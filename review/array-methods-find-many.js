@@ -36,17 +36,13 @@ let courses = [
   },
 ];
 
-// find one
-// for (const course of courses) {
-//   if (course.CourseId == "PROG400") {
-//     console.log(course);
-//   }
-// }
-
-function isPROG400() {
-  
+//find many
+for (const course of courses) {
+  if (course.Location == "Classroom 1") {
+    console.log(course);
+  }
 }
 
-courses.find()
+
 
 
