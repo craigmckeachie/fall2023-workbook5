@@ -9,11 +9,17 @@
     <input type="text" id="firstNameInput" value="Ian" />
     <button id="clearButton">Clear</button>
     <p id="contentParagraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, provident?</p>
+    <img id="myImage" src="" alt="" />
     <script>
       const firstNameInput = document.getElementById("firstNameInput");
       const clearButton = document.getElementById("clearButton");
       const contentParagraph = document.getElementById("contentParagraph");
+      const myImage = document.getElementById("myImage");
       console.log(firstNameInput);
+      myImage.src = "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/05/18/16844129976823.jpg";
+      myImage.alt = "Keanu";
+      myImage.width = 200;
+      myImage.title = "Keanu Doing Martial Arts Things";
 
       function clear() {
         firstNameInput.value = "";
