@@ -37,8 +37,18 @@ let courses = [
 ];
 
 //all
-for (const course of courses) {
+// for (const course of courses) {
+//   console.log(course);
+// }
+
+function printCourse(course) {
   console.log(course);
 }
 
-courses.find();
+//for all
+courses.forEach(printCourse);
+
+//forEach is doing this
+// for (const course of courses) {
+//   printCourse(course);
+// }
