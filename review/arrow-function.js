@@ -12,3 +12,12 @@ const bob2 = (a) => a + 100;
 let result2 = bob2(10);
 console.log(result2);
 
+
+
+function add(a,b) {
+  return a+ b;
+}
+
+console.log(add(2, 2));
+
+
