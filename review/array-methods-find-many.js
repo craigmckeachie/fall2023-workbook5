@@ -36,13 +36,42 @@ let courses = [
   },
 ];
 
-let coursesInClassroom1 = [];
+// let coursesInClassroom1 = [];
 
-//find many
-for (const course of courses) {
-  if (course.Location == "Classroom 1") {
-    coursesInClassroom1.push(course);
+// //find many
+// for (const course of courses) {
+//   if (course.Location == "Classroom 1") {
+//     coursesInClassroom1.push(course);
+//   }
+// }
+
+// console.log(coursesInClassroom1);
+
+// function isCourseInClassroom1(course) {
+//   if (course.Location == "Classroom 1") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// function isCourseInClassroom1(course) {
+//   return course.Location == "Classroom 1";
+// }
+
+// let coursesInClassroom1 = courses.filter(isCourseInClassroom1);
+// console.log(coursesInClassroom1);
+
+//my own function
+function filter(fnToCall) {
+  let coursesThatMatch = [];
+  for (const course of courses) {
+    let result = fnToCall(course);
+    if (result == true) {
+      coursesThatMatch.push(course);
+    }
   }
+  return coursesThatMatch;
 }
 
-console.log(coursesInClassroom1);
+let coursesInClassroom1 = courses.filter((course) => course.Location == "Classroom 1");
