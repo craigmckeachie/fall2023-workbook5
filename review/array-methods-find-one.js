@@ -43,10 +43,15 @@ let courses = [
 //   }
 // }
 
-function isPROG400() {
-  
+function isPROG400(course) {
+  if (course.CourseId == "PROG400") {
+    return true;
+  }else{
+    return false;
+  }
 }
 
-courses.find()
+let foundCourse = courses.find(isPROG400);
+console.log(foundCourse);
 
 
