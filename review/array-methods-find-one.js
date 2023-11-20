@@ -43,15 +43,17 @@ let courses = [
 //   }
 // }
 
+// function isPROG400(course) {
+//   if (course.CourseId == "PROG400") {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
 function isPROG400(course) {
-  if (course.CourseId == "PROG400") {
-    return true;
-  }else{
-    return false;
-  }
+  return course.CourseId == "PROG400";
 }
 
 let foundCourse = courses.find(isPROG400);
 console.log(foundCourse);
-
-
