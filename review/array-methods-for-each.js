@@ -36,17 +36,9 @@ let courses = [
   },
 ];
 
-//find one
-// for (const course of courses) {
-//   if (course.CourseId == "PROG400") {
-//     console.log(course);
-//   }
-// }
-
-function isPROG400() {
-  
+//all
+for (const course of courses) {
+  console.log(course);
 }
 
-courses.find()
-
-
+courses.find();
