@@ -47,5 +47,10 @@ let courses = [
 //   console.log(title);
 // }
 
-const courseTitlesLong = courses.map((course) => `${course.CourseId}: ${course.Title}`); 
-courseTitlesLong.forEach(title => console.log(title))
+const courseTitlesLong = courses.map((course) => `${course.CourseId}: ${course.Title}`);
+courseTitlesLong.forEach((title) => console.log(title));
+
+const newArray = courses.map((course) => ({ title: course.Title, id: course.CourseId }));
+console.log(newArray);
+
+
