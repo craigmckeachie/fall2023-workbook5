@@ -20,7 +20,7 @@ let courses = [
     Title: "Introduction to Java",
     Location: "Classroom 1",
     StartDate: "01/09/23",
-    Fee: "50.00",
+    Fee: "49.99",
   },
   {
     CourseId: "PROG400",
@@ -39,37 +39,47 @@ let courses = [
 ];
 
 console.log("When does the PROG200 course start?");
-for (const course of courses) {
-  if (course.CourseId == "PROG200") {
-    console.log(course.StartDate);
-  }
-}
+// for (const course of courses) {
+//   if (course.CourseId == "PROG200") {
+//     console.log(course.StartDate);
+//   }
+// }
+
+const prog200Course = courses.find((course) => course.CourseId == "PROG200");
+console.log(prog200Course.StartDate);
 
 console.log();
 
 console.log("What is the title of the PROJ500 course?");
-for (const course of courses) {
-  if (course.CourseId == "PROJ500") {
-    console.log(course.Title);
-  }
-}
+// for (const course of courses) {
+//   if (course.CourseId == "PROJ500") {
+//     console.log(course.Title);
+//   }
+// }
+
+const proj500Course = courses.find((course) => course.CourseId == "PROJ500");
+console.log(proj500Course.Title);
 
 console.log();
 
 console.log("What are the titles of the courses that cost $50 or less?");
-for (const course of courses) {
-  if (Number(course.Fee) <= 50) {
-    console.log(course.Title);
-  }
-}
+// for (const course of courses) {
+//   if (Number(course.Fee) <= 50) {
+//     console.log(course.Title);
+//   }
+// }
+
+const cheapCourses = courses.filter((course) => Number(course.Fee) <= 50);
+cheapCourses.forEach((course) => console.log(course.Title));
 
 console.log();
 
 console.log('What classes meet in "Classroom 1"?');
-for (const course of courses) {
-  if (course.Location == "Classroom 1") {
-    console.log(course.Title);
-  }
-}
+// for (const course of courses) {
+//   if (course.Location == "Classroom 1") {
+//     console.log(course.Title);
+//   }
+// }
 
-
+const coursesInClassroom1 = courses.filter(course => course.Location == "Classroom 1")
+coursesInClassroom1.forEach(course => console.log(course.Title));
