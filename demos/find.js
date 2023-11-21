@@ -37,3 +37,11 @@ let courses = [
     Fee: "50.00",
   },
 ];
+
+
+const course = courses.find(function findCourse(course) {
+  return course.CourseId == "PROG100";
+});
+
+console.log(course);
+
