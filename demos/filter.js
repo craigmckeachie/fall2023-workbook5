@@ -38,23 +38,6 @@ let courses = [
   },
 ];
 
-// const course = courses.find(function findCourse(course) {
-//   return course.CourseId == "PROG100";
-// });
 
-// const course = courses.find(function (course) {
-//   return course.CourseId == "PROG100";
-// });
-
-// const course = courses.find((course) => {
-//   return course.CourseId == "PROG100";
-// });
-
-// const course = courses.find((course) => course.CourseId == "PROG100");
-
-
-//find first
-const courseId = "PROG100";
-const course = courses.find(c => c.CourseId == courseId);
-
-console.log(course);
+const coursesInClassroom1 = courses.filter(c => c.Location == "Classroom 1");
+console.log(coursesInClassroom1);
