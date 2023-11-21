@@ -48,6 +48,7 @@ console.log("When does the PROG200 course start?");
 const prog200Course = courses.find((course) => course.CourseId == "PROG200");
 console.log(prog200Course.StartDate);
 
+
 console.log();
 
 console.log("What is the title of the PROJ500 course?");
