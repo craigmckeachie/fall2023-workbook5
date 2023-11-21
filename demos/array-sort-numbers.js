@@ -1,3 +1,5 @@
+"use strict";
+
 let numbers = [100, 20, 55, 67, 11, 2, 88];
 
 // version 1
@@ -29,7 +31,7 @@ let numbers = [100, 20, 55, 67, 11, 2, 88];
 
 //version 4
 //change function over to an arrow function
-//by replacing the function keyword on the left side of the parameter list () 
+//by replacing the function keyword on the left side of the parameter list ()
 //with the arrow symbol => on the right side of the parameter list ()
 // numbers.sort((a, b) => {
 //   return a - b;
@@ -38,7 +40,7 @@ let numbers = [100, 20, 55, 67, 11, 2, 88];
 //version 5
 //if an arrow function has only one line of code inside it
 //you can shorten it by:
-// removing the curly brances { } that define the function body 
+// removing the curly brances { } that define the function body
 // removing the return statement because that is now implicit (done automatically)
 //and you will also need to remove the semicolon ; at the end of the one line of code
 numbers.sort((a, b) => a - b);
