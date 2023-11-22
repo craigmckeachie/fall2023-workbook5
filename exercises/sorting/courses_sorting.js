@@ -37,3 +37,20 @@ let courses = [
     Fee: "50.00",
   },
 ];
+
+courses.sort((courseA, courseB) => {
+  if (courseA.Title < courseB.Title) return -1;
+  else if (courseA.Title == courseB.Title) return 0;
+  return 1;
+});
+
+console.log("Sorted by Title");
+console.log(courses);
+
+console.log("----------------------------------------");
+
+
+courses.sort((courseA, courseB) => Number(courseA.Fee) - Number(courseB.Fee));
+
+console.log("Sorted by Fee");
+console.log(courses);
